@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+
+  client:
+    image: pmorski/alpine-curl
+    networks:
+      squid_net:
+        ipv4_address: 10.0.0.3
+    tty:
+      true
+    container_name: client
+
+  squid:
+    image: sameersbn/squid
+    networks:
+      squid_net:
+        ipv4_address: 10.0.0.2
+    volumes:
+      - "./squid.conf:/etc/squid/squid.conf"
+    container_name: squid
+
+networks:
+  squid_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.0.0/24
