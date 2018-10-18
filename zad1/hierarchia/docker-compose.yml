@@ -10,8 +10,6 @@ services:
     volumes:
       - "./p1.conf:/etc/squid/squid.conf"
     container_name: p1
-    depends_on:
-      - p2
 
   p2:
     image: sameersbn/squid

@@ -22,11 +22,20 @@ services:
       - "./p2.conf:/etc/squid/squid.conf"
     container_name: p2
 
+  p3:
+    image: sameersbn/squid
+    networks:
+      squid_net:
+        ipv4_address: 10.0.0.4
+    volumes:
+      - "./p3.conf:/etc/squid/squid.conf"
+    container_name: p3
+
   client:
     image: pmorski/alpine-curl
     networks:
       squid_net:
-        ipv4_address: 10.0.0.4
+        ipv4_address: 10.0.0.5
     tty:
       true
     container_name: client
