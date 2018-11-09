@@ -1,0 +1,9 @@
+1541780967.796      1 10.0.0.3 TCP_MISS/200 316 GET http://dae40c7d96fc:3128/squid-internal-dynamic/netdb - HIER_NONE/- -
+1541780970.698      0 10.0.0.4 TCP_MISS/200 316 GET http://dae40c7d96fc:3128/squid-internal-dynamic/netdb - HIER_NONE/- -
+1541780982.344    379 10.0.0.5 TCP_MISS/200 810 GET http://via.placeholder.com/150 - TIMEOUT_HIER_DIRECT/45.33.24.119 image/png
+1541781004.507      0 10.0.0.5 TCP_MEM_HIT/200 817 GET http://via.placeholder.com/150 - HIER_NONE/- image/png
+1541781038.285      0 10.0.0.3 UDP_HIT/000 51 ICP_QUERY http://via.placeholder.com/150 - HIER_NONE/- -
+1541781038.286      0 10.0.0.3 TCP_MEM_HIT/200 555 GET http://dae40c7d96fc:3128/squid-internal-periodic/store_digest - HIER_NONE/- application/cache-digest
+1541781038.290      0 10.0.0.3 TCP_MEM_HIT/200 817 GET http://via.placeholder.com/150 - HIER_NONE/- image/png
+1541781078.061      0 10.0.0.4 UDP_HIT/000 51 ICP_QUERY http://via.placeholder.com/150 - HIER_NONE/- -
+1541781078.062      0 10.0.0.4 TCP_MEM_HIT/200 555 GET http://dae40c7d96fc:3128/squid-internal-periodic/store_digest - HIER_NONE/- application/cache-digest

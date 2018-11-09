@@ -9,9 +9,9 @@ services:
         ipv4_address: 10.0.0.2
     volumes:
       - "./p1.conf:/etc/squid/squid.conf"
+      - "./p1.access.log:/var/log/squid/access.log"
+      - "./p1.store.log:/var/log/squid/store.log"
     container_name: p1
-    depends_on:
-      - p2
 
   p2:
     image: sameersbn/squid
@@ -20,7 +20,11 @@ services:
         ipv4_address: 10.0.0.3
     volumes:
       - "./p2.conf:/etc/squid/squid.conf"
+      - "./p2.access.log:/var/log/squid/access.log"
+      - "./p2.store.log:/var/log/squid/store.log"
     container_name: p2
+    depends_on:
+      - p1
 
   p3:
     image: sameersbn/squid
@@ -29,7 +33,11 @@ services:
         ipv4_address: 10.0.0.4
     volumes:
       - "./p3.conf:/etc/squid/squid.conf"
+      - "./p3.access.log:/var/log/squid/access.log"
+      - "./p3.store.log:/var/log/squid/store.log"
     container_name: p3
+    depends_on:
+      - p1
 
   client:
     image: pmorski/alpine-curl
@@ -39,6 +47,10 @@ services:
     tty:
       true
     container_name: client
+    depends_on:
+      - p1
+      - p2
+      - p3
 
 networks:
   squid_net:
