@@ -1,0 +1,2 @@
+1541782948.415    341 10.0.0.5 TCP_MISS/200 921 GET http://via.placeholder.com/150 - TIMEOUT_FIRST_PARENT_MISS/10.0.0.3 image/png
+1541783002.097      0 10.0.0.5 TCP_MEM_HIT/200 928 GET http://via.placeholder.com/150 - HIER_NONE/- image/png

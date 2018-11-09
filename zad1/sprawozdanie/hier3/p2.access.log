@@ -1,0 +1,4 @@
+1541782948.074      0 10.0.0.4 UDP_MISS/000 51 ICP_QUERY http://via.placeholder.com/150 - HIER_NONE/- -
+1541782948.414    324 10.0.0.4 TCP_MISS/200 810 GET http://via.placeholder.com/150 - HIER_DIRECT/45.33.24.119 image/png
+1541782952.616      0 10.0.0.4 TCP_MISS/200 316 GET http://6aafce03483c:3128/squid-internal-dynamic/netdb - HIER_NONE/- -
+1541783008.076      0 10.0.0.4 TCP_MEM_HIT/200 555 GET http://6aafce03483c:3128/squid-internal-periodic/store_digest - HIER_NONE/- application/cache-digest

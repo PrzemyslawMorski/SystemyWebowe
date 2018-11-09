@@ -1,0 +1,3 @@
+1541783579.044      0 10.0.0.3 TCP_MISS/200 316 GET http://ec7390e7ff42:3128/squid-internal-dynamic/netdb - HIER_NONE/- -
+1541783597.970      0 10.0.0.3 UDP_MISS/000 51 ICP_QUERY http://via.placeholder.com/150 - HIER_NONE/- -
+1541783597.971      0 10.0.0.3 TCP_MEM_HIT/200 555 GET http://ec7390e7ff42:3128/squid-internal-periodic/store_digest - HIER_NONE/- application/cache-digest
